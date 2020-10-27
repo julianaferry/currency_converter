@@ -3,16 +3,18 @@ import './App.css';
 import CurrencyInfo from './currency';
 
 const API_URL = ('https://api.exchangerate-api.com/v4/latest/USD');
+console.log(API_URL)
+
 
 
 function App() {
   /*states*/
-  const [currencies, setCurrencies] = useState([])
-  const [baseCurrency, setBaseCurrency] = useState()
-  const [newCurrency, setNewCurrency] = useState()
-  const [baseAmount, setBaseAmount] = useState(100)
-  const [changeCurrency, setChangeCurrency] = useState(true)
-  const [rate, setRate] = useState()
+  const [currencies, setCurrencies] = useState([]);
+  const [baseCurrency, setBaseCurrency] = useState();
+  const [newCurrency, setNewCurrency] = useState();
+  const [baseAmount, setBaseAmount] = useState(100);
+  const [changeCurrency, setChangeCurrency] = useState(true);
+  const [rate, setRate] = useState();
 
   /*new Amounts values*/
   let newAmount, oldAmount;
@@ -49,13 +51,13 @@ function App() {
 
   /*converted currency*/
   function handleBaseAmount(e) {
-    setBaseAmount(e.target.value)
-    setChangeCurrency(true)
+    setBaseAmount(e.target.value);
+    setChangeCurrency(true);
   }
 
   function handleNewAmount(e) {
-    setBaseAmount(e.target.value)
-    setChangeCurrency(false)
+    setBaseAmount(e.target.value);
+    setChangeCurrency(false);
   }
 
 
