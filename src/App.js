@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import CurrencyInfo from './currency';
 
-const API_URL = 'http://data.fixer.io/api/latest?access_key=814407d3b33f12235cf6b0572a74191a';
+const API_URL = ('https://api.exchangerate-api.com/v4/latest/USD');
 
 
 function App() {
